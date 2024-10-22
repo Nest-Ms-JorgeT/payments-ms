@@ -22,7 +22,7 @@ async function bootstrap() {
   app.connectMicroservice<MicroserviceOptions>({
     transport: Transport.NATS,
     options: {
-      server: envs.natsServers,
+      servers: envs.natsServers,
     },
   });
 
